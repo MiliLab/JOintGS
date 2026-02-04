@@ -1,21 +1,32 @@
+
+<div align="center">
+
+
 # JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction
 
-This repository is a reference implementation for JOintGS, a unified framework that jointly optimizes camera extrinsics, human poses, and 3D Gaussian representations to achieve robust, high-fidelity, and animatable 3D human avatar reconstruction from unconstrained monocular videos with coarse initialization.
+[![Paper](https://img.shields.io/badge/Under_Review-b31b1b.svg)](https://your-paper-link-here)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-FFD21E.svg)](https://huggingface.co/datasets/your-link)
+[![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
+
+**This repository is a reference implementation for JOintGS, a unified framework that jointly optimizes camera extrinsics, human poses, and 3D Gaussian representations to achieve robust, high-fidelity, and animatable 3D human avatar reconstruction from unconstrained monocular videos with coarse initialization.**
+
+[**Introduction**](#introduction) | [**Getting Started**](#getting-started) | [**Dataset & Pre-Process**](#dataset) | [**Evaluation**](#evaluation) | [**Training**](#training) | [**License**](#license) | [**Citation**](#citation)
+
+</div>
 
 
 
-[[Paper](https://arxiv.org/abs/???)]
 
 
-> [**JOintGS**](https://arxiv.org/abs/???),            
-> [Zihan Lou](???), 
-> [Jinlong Fan](???), 
-> [Jing Zhang](???),   
 
+# Introduction
 
 <p float="center">
   <img src="assets/JOintGS_Framework.png" width="100%" />
 </p>
+
+
 
 # Getting Started
 
@@ -31,14 +42,12 @@ git clone https://github.com/MiliLab/JOintGS
 source scripts/conda_setup.sh
 ```
 
-# Preparing the datasets and models
 
-## Datasets
+# Dataset
 - Download the [SMPL](https://smpl.is.tue.mpg.de/) neutral body model.
 - Download [NeuMan](https://docs-assets.developer.apple.com/ml-research/datasets/neuman/dataset.zip) dataset.
 - Download [EMDB](https://emdb.ait.ethz.ch/) (Ethical Multi-Device Body) dataset.
 
-## Pre-Process
 We recommend following the step-by-step instructions provided in `data/scripts/readme.md` to refine the datasets. These scripts handle essential tasks such as camera parameter extraction and SMPL fitting alignment.
 
 After following the above steps, you should obtain a folder structure similar to this:
