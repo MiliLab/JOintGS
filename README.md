@@ -19,11 +19,11 @@ This repository is a reference implementation for JOintGS, a unified framework t
 
 # Getting Started
 
-We tested our system with Ubuntu ??? using a CUDA 12.8 compatible GPU.
+We tested our system on Ubuntu 22.04.5 LTS using a CUDA 13.0 compatible GPU
 
 - Clone our repo:
 ```
-git clone ???
+git clone https://github.com/MiliLab/JOintGS
 ```
 
 - Run the setup script to create a conda environment and install the required packages.
@@ -34,29 +34,32 @@ source scripts/conda_setup.sh
 # Preparing the datasets and models
 
 ## Datasets
-- Download the SMPL neutral body model
+- Download the [SMPL](https://smpl.is.tue.mpg.de/) neutral body model.
+- Download [NeuMan](https://docs-assets.developer.apple.com/ml-research/datasets/neuman/dataset.zip) dataset.
+- Download [EMDB](https://emdb.ait.ethz.ch/) (Ethical Multi-Device Body) dataset.
 
-- Download NeuMan dataset and pretrained models:
-
+## Pre-Process
+We recommend following the step-by-step instructions provided in `data/scripts/readme.md` to refine the datasets. These scripts handle essential tasks such as camera parameter extraction and SMPL fitting alignment.
 
 After following the above steps, you should obtain a folder structure similar to this:
 
 ```
 data/
 ├── smpl
-│   ├── SMPL_NEUTRAL.pkl
+│   └── SMPL_NEUTRAL.pkl
 ├── neuman
-│   └── dataset
-│       ├── bike
-│       ├── citron
-│       ├── jogging
-│       ├── lab
-│       ├── parkinglot
-│       └── seattle
+│   ├── bike
+│   └── ...
+└── emdb
+    ├── P0_08_outdoor_remove_jacket
+    │   ├── images
+    │   ├── masks
+    │   ├── sparse
+    │   └── sam3db
 ```
 
 
-# Training
+# Evaluation
 
 ## 💾  Pre-trained Checkpoints
 You can download our pre-trained model checkpoints directly from Hugging Face Hub, allowing you to bypass the training process.
@@ -75,7 +78,7 @@ checkpoints/
 │   └── seattle
 ```
 
-# Evaluation
+# Training
 
 # Citation
 
