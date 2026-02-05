@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 
-**This repository is a reference implementation for JOintGS, a unified framework that jointly optimizes camera extrinsics, human poses, and 3D Gaussian representations to achieve robust, high-fidelity, and animatable 3D human avatar reconstruction from unconstrained monocular videos with coarse initialization.**
+**JOintGS jointly optimizes cameras, human poses, and 3DGS for robust, animatable 3D human avatar reconstruction from monocular video with coarse initialization.**
 
 [**Introduction**](#introduction) | [**Getting Started**](#getting-started) | [**Dataset & Pre-Process**](#dataset) | [**Evaluation**](#evaluation) | [**Training**](#training) | [**License**](#license) | [**Citation**](#citation)
 
@@ -90,4 +90,17 @@ checkpoints/
 # Training
 
 # Citation
+
+## 📜 License
+
+This project is intended for **academic research purposes only**.
+
+* **Source Code**: The software in this repository is licensed under the [MIT License](LICENSE).
+* **Model Weights**: The pre-trained checkpoints are released under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+* **Third-party Data & Models**:
+    * **SMPL**: The SMPL model is subject to the [SMPL Model License](https://smpl.is.tue.mpg.de/modellicense.html).
+    * **Datasets**: Images and annotations from [NeuMan](https://www.apple.com/kl/ml-research/datasets/neuman/) and [EMDB](https://emdb.ait.ethz.ch/) adhere to their original licensing terms (strictly for non-commercial research).
+
+By downloading or using these materials, you agree to comply with the respective licenses of all components.
+
 
