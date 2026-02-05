@@ -4,8 +4,8 @@
 
 # JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction
 
-[![Paper](https://img.shields.io/badge/Under_Review-b31b1b.svg)](https://your-paper-link-here)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-FFD21E.svg)](https://huggingface.co/datasets/your-link)
+[![Paper](https://img.shields.io/badge/Under_Review-b31b1b.svg)](http://arxiv.org/abs/2602.04317)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-FFD21E.svg)](https://huggingface.co/louzihan/JOintGS)
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 
